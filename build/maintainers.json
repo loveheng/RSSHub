@@ -384,6 +384,9 @@
   "/ally/rail/:category?/:topic?": [
     "Rongronggg9"
   ],
+  "/alpinelinux/pkgs/:name/:routeParams?": [
+    "CaoMeiYouRen"
+  ],
   "/alternativeto/platform/:name/:routeParams?": [
     "JimenezLi"
   ],
@@ -414,7 +417,7 @@
   "/apkpure/versions/:pkg/:region?": [
     "maple3142"
   ],
-  "/apnews/rss/:rss?": [
+  "/apnews/rss/:category?": [
     "zoenglinghou",
     "mjysci",
     "TonyRL"
@@ -476,6 +479,9 @@
     "TonyRL"
   ],
   "/asiantolick/:category{.+}?": [],
+  "/asmr-200/works/:order?/:subtitle?/:sort?": [
+    "hualiong"
+  ],
   "/asus/bios/:model": [
     "Fatpandac"
   ],
@@ -583,6 +589,9 @@
   ],
   "/bbcnewslabs/news": [
     "elxy"
+  ],
+  "/bc3ts/post/list/:sort?": [
+    "TonyRL"
   ],
   "/bdys/:caty?/:type?/:area?/:year?/:order?": [
     "nczitzk"
@@ -800,6 +809,9 @@
   "/bjwxdxh/:type?": [
     "Misaka13514"
   ],
+  "/bjx/fd/:type": [
+    "hualiong"
+  ],
   "/bjx/huanbao": [
     "zsimple"
   ],
@@ -817,6 +829,9 @@
   ],
   "/bloomberg/:site?": [
     "bigfei"
+  ],
+  "/bluearchive/news/:server/:type?": [
+    "equt"
   ],
   "/bluestacks/release/5": [
     "TonyRL"
@@ -868,6 +883,12 @@
   ],
   "/bsky/profile/:handle": [
     "TonyRL"
+  ],
+  "/bt0/mv/:number/:domain?": [
+    "miemieYaho"
+  ],
+  "/bt0/tlist/:sc/:domain?": [
+    "miemieYaho"
   ],
   "/btzj/:category?": [
     "nczitzk"
@@ -956,6 +977,15 @@
     "yuxinliu-alex",
     "nczitzk"
   ],
+  "/cara/likes/:user": [
+    "KarasuShin"
+  ],
+  "/cara/portfolio/:user": [
+    "KarasuShin"
+  ],
+  "/cara/timeline/:user": [
+    "KarasuShin"
+  ],
   "/cartoonmad/comic/:id": [
     "KellyHwong"
   ],
@@ -1004,6 +1034,9 @@
   ],
   "/ccac/news/:type/:lang?": [
     "linbuxiao"
+  ],
+  "/cccfna/:category/:type?": [
+    "hualiong"
   ],
   "/ccf/news/:category?": [
     "nczitzk"
@@ -1473,6 +1506,9 @@
   "/ddosi/": [
     "XinRoom"
   ],
+  "/deadbydaylight/blog": [
+    "NeverBehave"
+  ],
   "/deadline/": [
     "TonyRL"
   ],
@@ -1922,6 +1958,9 @@
     "nczitzk"
   ],
   "/fda/cdrh/:titleOnly?": [],
+  "/fediverse/timeline/:account": [
+    "DIYgod"
+  ],
   "/feng/forum/:id/:type?": [
     "TonyRL"
   ],
@@ -2967,6 +3006,9 @@
   "/hypergryph/arknights/announce/:platform?/:group?": [
     "swwind"
   ],
+  "/hypergryph/arknights/arktca": [
+    "Bendancom"
+  ],
   "/hypergryph/arknights/japan": [
     "ofyark"
   ],
@@ -3087,6 +3129,9 @@
   ],
   "/instructables/projects/:category?": [
     "wolfg1969"
+  ],
+  "/investor/:category{.+}?": [
+    "nczitzk"
   ],
   "/ippa/": [
     "cnkmmk"
@@ -3387,6 +3432,9 @@
   ],
   "/keepass/": [
     "TonyRL"
+  ],
+  "/kelownacapnews/:type": [
+    "hualiong"
   ],
   "/kemono/:source?/:id?": [
     "nczitzk"
@@ -3690,6 +3738,9 @@
   "/medsci/:sid?/:tid?": [
     "nczitzk"
   ],
+  "/meituan/tech": [
+    "ktKongTong"
+  ],
   "/metacritic/:type?/:sort?/:filter?": [],
   "/meteor/boards": [
     "TonyRL"
@@ -3707,6 +3758,9 @@
   "/microsoft/edge/addon/:crxid": [
     "hoilc",
     "DIYgod"
+  ],
+  "/microsoft/mcr/product/*": [
+    "margani"
   ],
   "/mihoyo/bbs/follow-list/:uid": [
     "CaoMeiYouRen"
@@ -3798,6 +3852,9 @@
   "/modrinth/project/:id/versions/:routeParams?": [
     "SettingDust"
   ],
+  "/moduzy/:type/:hours?": [
+    "hualiong"
+  ],
   "/mohw/clarification": [
     "nczitzk"
   ],
@@ -3828,6 +3885,9 @@
   "/mydrivers/:category{.+}?": [],
   "/mydrivers/rank/:range?": [
     "nczitzk"
+  ],
+  "/myfans/user/:username": [
+    "TonyRL"
   ],
   "/myfigurecollection/activity/:category?/:language?/:latestAdditions?/:latestEdits?/:latestAlerts?/:latestPictures?": [
     "nczitzk"
@@ -4324,8 +4384,12 @@
   "/olevod/vodlist": [
     "fang63625"
   ],
+  "/ollama/blog": [
+    "gavrilov"
+  ],
   "/ollama/library": [
-    "Nick22nd"
+    "Nick22nd",
+    "gavrilov"
   ],
   "/oncc/:language/:channel?": [
     "Fatpandac"
@@ -4846,6 +4910,9 @@
   "/rawkuma/manga/:id": [
     "nczitzk"
   ],
+  "/raycast/changelog": [
+    "equt"
+  ],
   "/reactiflux/transcripts": [
     "nczitzk"
   ],
@@ -4930,6 +4997,9 @@
   ],
   "/sakurazaka46/news": [
     "nczitzk"
+  ],
+  "/samdnews/:typeId": [
+    "hualiong"
   ],
   "/samsung/research/blog": [
     "nczitzk"
@@ -5869,6 +5939,9 @@
   "/trow/portal": [
     "shiningdracon"
   ],
+  "/tsdm39/bd/:type?": [
+    "equt"
+  ],
   "/tsinghua/lib/zydt/:category?": [
     "nczitzk"
   ],
@@ -6092,7 +6165,7 @@
     "jasongzy"
   ],
   "/usts/jwch/:type?": [],
-  "/utgd/:category?": [
+  "/utgd/category/:category?": [
     "nczitzk"
   ],
   "/utgd/timeline": [
