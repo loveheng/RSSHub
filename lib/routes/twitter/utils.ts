@@ -280,7 +280,7 @@ const ProcessFeed = (ctx, { data = [] }, params = {}) => {
         // Make title
         let title = '';
         if (showAuthorInTitle) {
-            title += originalItem.user.name + ': ';
+            title += userName + ': ';
         }
         const isRetweet = originalItem !== item;
         const isQuote = item.is_quote_status;
@@ -304,7 +304,7 @@ const ProcessFeed = (ctx, { data = [] }, params = {}) => {
         }
 
         if (showAuthorAsTitleOnly) {
-            title = originalItem.user.name;
+            title = userName;
         }
 
         // Make description
@@ -316,12 +316,12 @@ const ProcessFeed = (ctx, { data = [] }, params = {}) => {
             if (showAuthorInDesc) {
                 if (readable) {
                     description += '<small>';
-                    description += `<a href='https://x.com/${originalItem.user.screen_name}' target='_blank' rel='noopener noreferrer'>`;
+                    description += `<a href='https://x.com/${item.user?.screen_name}' target='_blank' rel='noopener noreferrer'>`;
                 }
                 if (authorNameBold) {
                     description += `<strong>`;
                 }
-                description += originalItem.user.name;
+                description += item.user?.name;
                 if (authorNameBold) {
                     description += `</strong>`;
                 }
@@ -334,12 +334,12 @@ const ProcessFeed = (ctx, { data = [] }, params = {}) => {
             if (!showAuthorInDesc) {
                 description += '&ensp;';
                 if (readable) {
-                    description += `<a href='https://x.com/${item.user.screen_name}' target='_blank' rel='noopener noreferrer'>`;
+                    description += `<a href='https://x.com/${item.user?.screen_name}' target='_blank' rel='noopener noreferrer'>`;
                 }
                 if (authorNameBold) {
                     description += `<strong>`;
                 }
-                description += item.user.name;
+                description += item.user?.name;
                 if (authorNameBold) {
                     description += `</strong>`;
                 }
@@ -354,7 +354,7 @@ const ProcessFeed = (ctx, { data = [] }, params = {}) => {
         }
         if (showAuthorInDesc) {
             if (readable) {
-                description += `<a href='https://x.com/${item.user.screen_name}' target='_blank' rel='noopener noreferrer'>`;
+                description += `<a href='https://x.com/${item.user?.screen_name}' target='_blank' rel='noopener noreferrer'>`;
             }
 
             if (showAuthorAvatarInDesc) {
@@ -363,7 +363,7 @@ const ProcessFeed = (ctx, { data = [] }, params = {}) => {
             if (authorNameBold) {
                 description += `<strong>`;
             }
-            description += item.user.name;
+            description += item.user?.name;
             if (authorNameBold) {
                 description += `</strong>`;
             }
@@ -393,16 +393,16 @@ const ProcessFeed = (ctx, { data = [] }, params = {}) => {
         }
 
         const link =
-            originalItem.user.screen_name && (originalItem.id_str || originalItem.conversation_id_str)
-                ? `https://x.com/${originalItem.user.screen_name}/status/${originalItem.id_str || originalItem.conversation_id_str}`
-                : `https://x.com/${item.user.screen_name}/status/${item.id_str || item.conversation_id_str}`;
+            originalItem.user?.screen_name && (originalItem.id_str || originalItem.conversation_id_str)
+                ? `https://x.com/${originalItem.user?.screen_name}/status/${originalItem.id_str || originalItem.conversation_id_str}`
+                : `https://x.com/${item.user?.screen_name}/status/${item.id_str || item.conversation_id_str}`;
         return {
             title,
             author: [
                 {
-                    name: originalItem.user.name,
-                    url: `https://x.com/${originalItem.user.screen_name}`,
-                    avatar: originalItem.user.profile_image_url_https,
+                    name: originalItem.user?.name,
+                    url: `https://x.com/${originalItem.user?.screen_name}`,
+                    avatar: originalItem.user?.profile_image_url_https,
                 },
             ],
             description,
@@ -414,7 +414,7 @@ const ProcessFeed = (ctx, { data = [] }, params = {}) => {
                 (isRetweet && {
                     links: [
                         {
-                            url: `https://x.com/${item.user?.screen_name}/status/${item.conversation_id_str}`,
+                            url: `https://x.com/${item.user?.screen_name || userScreenName}/status/${item.conversation_id_str}`,
                             type: 'repost',
                         },
                     ],
