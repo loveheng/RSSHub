@@ -42042,6 +42042,19 @@
       }
     ]
   },
+  "wuling.com": {
+    "_name": "五菱汽车",
+    ".": [
+      {
+        "title": "五菱银标车型",
+        "docs": "https://docs.rsshub.app/routes/car",
+        "source": [
+          "/wulingSilverBadge"
+        ],
+        "target": "/wuling/wulingSilverBadge"
+      }
+    ]
+  },
   "wyzxwk.com": {
     "_name": "乌有之乡",
     ".": [
