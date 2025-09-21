@@ -8604,6 +8604,9 @@
   "/wikinews/latest": [
     "KotoriK"
   ],
+  "/wikipedia/current-events/:includeToday?": [
+    "aavanian"
+  ],
   "/windsurf/blog": [
     "nczitzk"
   ],
