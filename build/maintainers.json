@@ -1860,6 +1860,9 @@
   "/crossbell/notes/source/:source": [
     "DIYgod"
   ],
+  "/crush/pages/:id": [
+    "Tsuyumi25"
+  ],
   "/cryptoslate/": [
     "pseudoyu"
   ],
@@ -8058,6 +8061,9 @@
   ],
   "/tsdm39/bd/:type?": [
     "equt"
+  ],
+  "/tsinghua/news/:category?": [
+    "TonyRL"
   ],
   "/tsinghua/lib/tzgg/:category": [
     "linsenwang"
