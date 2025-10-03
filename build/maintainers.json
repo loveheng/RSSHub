@@ -5166,6 +5166,9 @@
   "/mercari/:sort/:order/:status/:keyword": [
     "yana9i"
   ],
+  "/mercari/search/:query": [
+    "yana9i, Tsuyumi25"
+  ],
   "/meta/ai/blog": [
     "TonyRL"
   ],
