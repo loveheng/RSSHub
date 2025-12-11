@@ -24,5 +24,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: 2018docker/rsshub:chromium-bundled
+          tags: 2018docker/rsshub:latest
           # GitHub 服务器性能强，这里通常不需要 ulimit，但也可以通过 extra-args 加
