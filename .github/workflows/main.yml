@@ -27,7 +27,6 @@ jobs:
           push: true
           tags: |
             2018docker/rsshub:latest
-            2018docker/rsshub:${{ github.sha }}  # 添加 commit sha 标签
           cache-from: type=gha  # 使用 GitHub Actions 缓存
           cache-to: type=gha,mode=max
           sbom: true  # 生成 SBOM（软件物料清单）
