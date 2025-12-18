@@ -23,7 +23,7 @@ jobs:
         uses: docker/build-push-action@v6  # 更新到最新版本
         with:
           context: .
-          platforms: linux/amd64,linux/arm64  # 多平台支持
+          platforms: linux/amd64  # 多平台支持linux/amd64,linux/arm64
           push: true
           tags: |
             2018docker/rsshub:latest
