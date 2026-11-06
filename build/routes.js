@@ -16287,8 +16287,7 @@ export default {
           "hyoban"
         ],
         "categories": [
-          "social-media",
-          "popular"
+          "social-media"
         ],
         "view": 3,
         "example": "/bilibili/ranking/0",
@@ -89567,8 +89566,7 @@ export default {
       "/search/:keyword": {
         "path": "/search/:keyword",
         "categories": [
-          "multimedia",
-          "popular"
+          "multimedia"
         ],
         "view": 3,
         "example": "/pornhub/search/stepsister",
